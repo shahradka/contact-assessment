@@ -1,9 +1,9 @@
-import React from "react";
+import React, { HTMLProps } from "react";
 
 
-const Footer = () => {
+const Footer = (props:HTMLProps<HTMLDivElement> ) => {
 
-    return <footer />    
+    return <footer {...props} />    
 }
 
 export default Footer;

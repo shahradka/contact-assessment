@@ -1,12 +1,12 @@
-import React from "react";
+import React, { HTMLProps } from "react";
 
-interface IMain {
+interface IMain extends HTMLProps<HTMLDivElement>{
     children:React.ReactNode
 }
 
-const Main = ({children}:IMain) => {
+const Main = ({children, ...restProps}:IMain) => {
 
-    return <main>
+    return <main  {...restProps}>
         {children}
     </main>
     

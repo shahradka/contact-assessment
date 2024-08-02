@@ -1,0 +1,24 @@
+@import "@sass/_variables.scss";
+
+.layout{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-footer{
+    width: 100%;
+    background-color: $violet-300;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.footer{
+    height: 30px;
+}
+
+.header{
+    height: 60px;
+}

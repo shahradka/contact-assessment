@@ -1,12 +1,12 @@
-import React from "react";
+import React, { HTMLProps } from "react";
 
-interface IHeader {
+interface IHeader extends HTMLProps<HTMLDivElement> {
     title:string
 }
 
-const Header = ({title}:IHeader) => {
+const Header = ({title, ...restProps}:IHeader) => {
 
-    return <header>
+    return <header {...restProps}>
         {title}
     </header>
     
