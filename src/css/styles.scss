@@ -1,7 +1,3 @@
 @import "sass/variables";
-@import "sass/fontface";
-  
-
-body{
-    background-color: $primary-base;
-}
+@import "sass/media";
+@import "sass/main";
