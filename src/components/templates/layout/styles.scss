@@ -9,10 +9,16 @@
 .header-footer{
     width: 100%;
     background-color: $violet-300;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .main {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .footer{
@@ -21,4 +27,17 @@
 
 .header{
     height: 60px;
+}
+
+.inner-small{
+    width: 100%;
+    padding-inline: $h-s-padding;
+    padding-block: $v-s-padding;
+}
+
+.inner-large{
+    width: 100%;
+    max-width: 640px;
+    padding-inline: $h-l-padding;
+    padding-block: $v-l-padding;
 }

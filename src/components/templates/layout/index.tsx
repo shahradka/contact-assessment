@@ -3,6 +3,8 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import "./styles.scss";
+import { useMediaQueries } from '../../../hooks/useMediaQueries';
+import classNames from 'classnames';
 
 interface ILayout {
     title: string
@@ -10,9 +12,11 @@ interface ILayout {
 }
 
 const Layout = ({children, title}:ILayout) => {
+    
+    const {mobile, tablet} = useMediaQueries();
 
     return <div className='layout'>
-        <Header className='header-footer header' title={title} />
+        <Header className='header-footer header' title={title} innerClassName={classNames({'inner-small':mobile, 'inner-large':tablet})} />
         <Main className='main'>
             {children}
         </Main>
