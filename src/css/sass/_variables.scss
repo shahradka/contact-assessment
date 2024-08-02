@@ -41,19 +41,19 @@ Text size
 
 **/
 
-$h1-l-size: 24px;
-$h2-l-size: 20px;
-$h3-l-size: 18px;
-$h4-l-size: 14px;
-$normal-l-size: 12px;
-$small-l-size: 10px;
+$h1-l-size: 1.714rem;
+$h2-l-size: 1.429rem;
+$h3-l-size: 1.286rem;
+$h4-l-size: 1rem;
+$normal-l-size: 0.857rem;
+$small-l-size: 0.714rem;
 
-$h1-s-size: 20px;
-$h2-s-size: 18px;
-$h3-s-size: 14px;
-$h4-s-size: 12px;
-$normal-s-size: 10px;
-$small-s-size: 8px;
+$h1-s-size: 1.429rem;
+$h2-s-size: 1.286rem;
+$h3-s-size: 1rem;
+$h4-s-size: 0.857rem;
+$normal-s-size: 0.714rem;
+$small-s-size: 0.571rem;
 
 /** 
 
@@ -70,6 +70,27 @@ Font style
 
 **/
 
-$default-font-style-name: 'Helvetica'
+$default-font-style-name: 'Helvetica';
+
+
+/**
+
+Line Height
+
+**/
+
+$line-height-h1-l: 1.429rem;
+$line-height-h2-l: 1.286rem;
+$line-height-h3-l: 1rem;
+$line-height-h4-l: 0.857rem;
+$line-height-normal-l: 0.714rem;
+$line-height-small-l: 0.714rem;
+
+$line-height-h1-s: 1.286rem;
+$line-height-h2-s: 1.143rem;
+$line-height-h3-s: 0.857rem;
+$line-height-h4-s: 0.714em;
+$line-height-normal-s: 0.714rem;
+$line-height-small-s: 0.714rem;
 
 
