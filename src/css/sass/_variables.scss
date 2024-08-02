@@ -3,8 +3,6 @@
  Color Palette
 
 **/
-$primary-base: #5956CC;
-$secondary-base: #FFFFFF;
 
 $violet-100: #A9A6FA;
 $violet-200: #7471E5;
@@ -23,6 +21,10 @@ $gray-500: #787878;
 $gray-600: #585858;
 $gray-700: #000000;
 
+$primary-base: $violet-300;
+$secondary-base: $gray-100;
+$contrast-text-base:$gray-200 ;
+
 /**
 
 Padding, Margin and Column Gap
@@ -32,5 +34,42 @@ Padding, Margin and Column Gap
 $v-padding: 10px;
 $h-padding: 10px;
 $column-gap: 20px;
+
+/** 
+
+Text size
+
+**/
+
+$h1-l-size: 24px;
+$h2-l-size: 20px;
+$h3-l-size: 18px;
+$h4-l-size: 14px;
+$normal-l-size: 12px;
+$small-l-size: 10px;
+
+$h1-s-size: 20px;
+$h2-s-size: 18px;
+$h3-s-size: 14px;
+$h4-s-size: 12px;
+$normal-s-size: 10px;
+$small-s-size: 8px;
+
+/** 
+
+Font weight
+
+**/
+
+$font-bold:800;
+$font-medium:400;
+
+/** 
+
+Font style
+
+**/
+
+$default-font-style-name: 'Helvetica'
 
 
