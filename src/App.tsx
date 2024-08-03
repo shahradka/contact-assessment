@@ -2,14 +2,14 @@ import * as React from "react";
 import { Provider } from 'react-redux';
 import "./css/styles.scss";
 import { store } from "./redux/store";
-import {Text} from '@components/atoms/text';
+import { Layout } from "@components/templates/layout";
 
 const App = () => {
 
     return <Provider store={store}>
-                <div>
+                <Layout title="home">
                     Contact App  Assessment!
-                </div>    
+                </Layout>    
         </Provider>
 }
 
