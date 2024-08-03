@@ -1,0 +1,7 @@
+@import '@sass/_variables.scss'; 
+
+.list{
+    padding: $v-spacing;
+    width: 100%;
+    border: 1px solid $border-color;
+}
