@@ -1,0 +1,57 @@
+@import '@sass/_variables.scss';
+
+.contact-record{
+    background-color: $gray-600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-record-inner-mask{
+    height: 101px;
+    overflow: hidden;
+    width: 100%;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-record-inner-mask.close{
+    height: 0px;
+    padding: 0px;
+    transition: height 1s;
+}
+.contact-record-inner{
+    max-width: $max-width;
+    width: 100%;
+    padding: $h-spacing;
+}
+
+.contact-record-item{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-record-item-text{
+    padding-block: $v-spacing;
+}
+
+.contact-record-toggle-btn{
+    width: 100%!important;
+    color: $contrast-text-base;
+}
+
+.contact-record-placeholder-toggle-btn{
+    background-color: $gray-500;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-record-placeholder-toggle-btn-inner{
+    max-width: $max-width;
+    width: 100%;
+}
