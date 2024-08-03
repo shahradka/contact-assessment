@@ -6,9 +6,11 @@ interface IMain extends HTMLProps<HTMLDivElement>{
 
 const Main = ({children, ...restProps}:IMain) => {
 
-    return <main  {...restProps}>
-        {children}
-    </main>
+    return <div className="main-wrapper">
+            <main  className="main" {...restProps}>
+                {children}
+            </main>    
+        </div>
     
 }
 
