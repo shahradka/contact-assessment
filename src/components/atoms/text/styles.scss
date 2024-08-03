@@ -14,10 +14,12 @@ $headlines: 4;
 
 .text {
   letter-spacing: -0.2px;
+  padding:0px;
+  margin:0px;
 }
 
 .contrast {
-  color: var($contrast-text-base);
+  color: $contrast-text-base;
 }
 
 .gray {
