@@ -23,6 +23,7 @@ $gray-700: #000000;
 
 $primary-base: $violet-300;
 $secondary-base: $gray-100;
+$primary-text: $gray-700;
 $contrast-text-base:$gray-200 ;
 
 /**
@@ -39,23 +40,24 @@ $column-gap: 20px;
 
 /** 
 
-Text size
+Font size
 
 **/
 
-$h1-l-size: 1.714rem;
-$h2-l-size: 1.429rem;
-$h3-l-size: 1.286rem;
-$h4-l-size: 1rem;
-$normal-l-size: 0.857rem;
-$small-l-size: 0.714rem;
-
-$h1-s-size: 1.429rem;
-$h2-s-size: 1.286rem;
-$h3-s-size: 1rem;
-$h4-s-size: 0.857rem;
-$normal-s-size: 0.714rem;
-$small-s-size: 0.571rem;
+$font-sizes: (
+    "h1-lg": 1.714rem,
+    "h2-lg": 1.429rem,
+    "h3-lg": 1.286rem,
+    "h4-lg": 1rem,
+    "normal-lg": 0.857rem,
+    "small-lg": 0.714rem,
+    "h1-sm": 1.429rem,
+    "h2-sm": 1.286rem,
+    "h3-sm": 1rem,
+    "h4-sm": 0.857rem,
+    "normal-sm": 0.714rem,
+    "small-sm": 0.571rem,
+);
 
 /** 
 
@@ -81,18 +83,19 @@ Line Height
 
 **/
 
-$line-height-h1-l: 1.429rem;
-$line-height-h2-l: 1.286rem;
-$line-height-h3-l: 1rem;
-$line-height-h4-l: 0.857rem;
-$line-height-normal-l: 0.714rem;
-$line-height-small-l: 0.714rem;
-
-$line-height-h1-s: 1.286rem;
-$line-height-h2-s: 1.143rem;
-$line-height-h3-s: 0.857rem;
-$line-height-h4-s: 0.714em;
-$line-height-normal-s: 0.714rem;
-$line-height-small-s: 0.714rem;
+$line-heights: ( 
+    "h1-lg": 1.429rem,
+    "h2-lg": 1.286rem,
+    "h3-lg": 1rem,
+    "h4-lg": 0.857rem,
+    "normal-lg": 0.714rem,
+    "small-lg": 0.714rem,
+    "h1-sm": 1.286rem,
+    "h2-sm": 1.143rem,
+    "h3-sm": 0.857rem,
+    "h4-sm": 0.714em,
+    "normal-sm": 0.714rem,
+    "small-sm": 0.714rem
+);
 
 
