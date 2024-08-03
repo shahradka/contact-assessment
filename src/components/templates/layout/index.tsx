@@ -8,15 +8,17 @@ import classNames from 'classnames';
 
 interface ILayout {
     title: string
+    contactRecordsComp?: React.ReactNode
     children: React.ReactNode
 }
 
-const Layout = ({children, title}:ILayout) => {
+const Layout = ({children, title, contactRecordsComp}:ILayout) => {
     
     const {mobile, tablet} = useMediaQueries();
 
     return <div className='layout'>
         <Header className='header-footer header' title={title} innerClassName={classNames({'inner-small':mobile, 'inner-large':tablet})} />
+        {contactRecordsComp}
         <Main className='main'>
             {children}
         </Main>
