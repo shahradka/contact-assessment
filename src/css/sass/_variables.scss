@@ -31,11 +31,12 @@ $contrast-text-base:$gray-200 ;
 Padding, Margin and Column Gap
 
 **/
-
-$v-s-padding: 10px;
-$h-s-padding: 10px;
-$v-l-padding: 20px;
-$h-l-padding: 20px;
+$v-spacing: 20px;
+$h-spacing: 20px;
+$v-sm-spacing: 10px;
+$h-sm-spacing: 10px;
+$v-lg-spacing: 20px;
+$h-lg-spacing: 20px;
 $column-gap: 20px;
 
 /** 
@@ -98,4 +99,11 @@ $line-heights: (
     "small-sm": 0.714rem
 );
 
+/**
+
+Border radius
+
+**/
+
+$global-radius: 5px;
 
