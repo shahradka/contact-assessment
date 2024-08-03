@@ -17,7 +17,7 @@ interface IText extends HtmlHTMLAttributes<HTMLSpanElement> {
   color?: "primary" | "contrast" | "gray";
   componentType?: keyof JSX.IntrinsicElements;
   decorating?: "simple" | "underlined" | "link";
-  children: string;
+  children?: string;
 }
 
 const CustomComponent: FC<
