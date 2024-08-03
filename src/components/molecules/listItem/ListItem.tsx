@@ -3,7 +3,7 @@ import classNames from "classnames";
 import React, { HTMLProps } from "react";
 import "./styles.scss";
 
-interface IListItem extends HTMLProps<HTMLDivElement>{
+export interface IListItem extends HTMLProps<HTMLDivElement>{
     avatarUrl?:string
     name?:string
     phone?: string
