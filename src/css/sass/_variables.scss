@@ -24,15 +24,17 @@ $gray-700: #000000;
 $primary-base: $violet-300;
 $secondary-base: $gray-100;
 $primary-text: $gray-700;
-$contrast-text-base:$gray-200 ;
+$contrast-text-base:$gray-200;
+
+$border-color: $gray-300;
 
 /**
 
 Padding, Margin and Column Gap
 
 **/
-$v-spacing: 20px;
-$h-spacing: 20px;
+$v-spacing: 10px;
+$h-spacing: 10px;
 $v-sm-spacing: 10px;
 $h-sm-spacing: 10px;
 $v-lg-spacing: 20px;
