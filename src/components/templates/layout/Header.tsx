@@ -1,3 +1,4 @@
+import { Text } from "@components/atoms/text";
 import React, { HTMLProps } from "react";
 
 interface IHeader extends HTMLProps<HTMLDivElement> {
@@ -9,7 +10,9 @@ const Header = ({title, innerClassName,...restProps}:IHeader) => {
 
     return <header {...restProps}>
             <div className={innerClassName}>
-                {title}
+                <Text variant="heading1" color="contrast">
+                    {title}
+                </Text>
             </div>
     </header>
     
