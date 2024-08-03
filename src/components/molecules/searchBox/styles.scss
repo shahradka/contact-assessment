@@ -1,0 +1,23 @@
+@import '@sass/_variables.scss'; 
+
+.search-box{
+    position: relative;
+}
+
+.search-button{
+    position: absolute;
+    width: 40px!important;
+    height: 100%!important;
+    top:0px;
+    right: 0px;
+}
+
+.search-text-field{
+    padding-right: 40px!important;
+    padding-left: $v-spacing!important;
+}
+
+.search-button{
+    border-top-right-radius: $global-radius;
+    border-bottom-right-radius: $global-radius;
+}

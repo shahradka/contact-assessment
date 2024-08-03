@@ -1,0 +1,7 @@
+@import '@sass/_variables.scss';
+
+.list-item{
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+    padding: $v-spacing;
+}
