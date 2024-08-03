@@ -11,6 +11,7 @@ Use grid-span-(xs, sm, md, lg)-col-(1,2,3,...,12) to expand grid column width Ex
 .grid{
     display: grid;
     column-gap: $column-gap;
+    row-gap: $row-gap;
 }
 
 $columns: 12;
