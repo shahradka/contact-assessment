@@ -31,13 +31,13 @@
 
 .inner-small{
     width: 100%;
-    padding-inline: $h-s-padding;
-    padding-block: $v-s-padding;
+    padding-inline: $h-sm-spacing;
+    padding-block: $v-sm-spacing;
 }
 
 .inner-large{
     width: 100%;
     max-width: 640px;
-    padding-inline: $h-l-padding;
-    padding-block: $v-l-padding;
+    padding-inline: $h-lg-spacing;
+    padding-block: $v-lg-spacing;
 }
