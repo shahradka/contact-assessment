@@ -1,33 +1,50 @@
-@import '@sass/_variables.scss';
+@import '@sass/_variables.scss'; 
 
 .button{
-
    border: none;
    display: flex;
    justify-content: center;
-   border-radius: $global-radius;
-   box-shadow: 0 0 4px 0 $gray-300;
    align-items: center;
-
 }
 
-.icon{
+.button.primary {
+   background-color: $primary-base;
+}
+
+.button.secondary {
+   background-color: $secondary-base;
+}
+
+.button.gray {
+   background-color: $gray-200;
+}
+
+.button.has-border{
+   box-shadow: 0 0 4px 0 $gray-300;
+   border-radius: $global-radius;
+}
+
+.button.transparent{
+   background-color: transparent;
+}
+
+.button.icon{
    width: 30px;
    height: 30px;
 }
 
-.tiny{
+.button.tiny{
    padding: 0px;
 }
 
-.small{
+.button.small{
    padding: calc($v-spacing / 2);
 }
 
-.medium{
+.button.medium{
    padding: $v-spacing;
 }
 
-.large{
+.button.large{
    padding: $v-spacing 2 * $v-spacing;
 }

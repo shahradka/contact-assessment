@@ -3,12 +3,12 @@
 @import '@sass/_breakpoints';
 $headlines: 4;
 
-.normal {
+.text.normal {
   font-family: $default-font-style-name;
   font-weight: $font-medium;
 }
 
-.bold {
+.text.bold {
   font-weight: $font-bold;
 }
 
@@ -18,15 +18,15 @@ $headlines: 4;
   margin:0px;
 }
 
-.contrast {
+.text.contrast {
   color: $contrast-text-base;
 }
 
-.gray {
+.text.gray {
   color: $gray-400;
 }
 
-.primary {
+.text.primary {
   color: $primary-text;
 }
 
@@ -47,24 +47,24 @@ $headlines: 4;
   @include generate-font-style($breakpoints);
 }
 
-.normal-lg {
+.text.normal-lg {
   font-size: map.get($font-sizes, "normal-lg");
   line-height: map.get($line-heights, "normal-lg");
 }
 
 
-.normal-sm {
+.text.normal-sm {
   font-size: map.get($font-sizes, "normal-sm");
   line-height: map.get($line-heights, "normal-sm");
 }
 
-.small-lg {
+.text.small-lg {
   font-size: map.get($font-sizes, "normal-lg");
   line-height: map.get($line-heights, "normal-lg");
 }
 
 
-.small-sm {
+.text.small-sm {
   font-size: map.get($font-sizes, "normal-sm");
   line-height: map.get($line-heights, "normal-sm");
 }

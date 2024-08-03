@@ -8,11 +8,11 @@
     @include default-font-style();
 }
 
-.small{
+.textField.small{
     max-width:20px;
     padding-inline: calc($h-lg-spacing / 2);
 }
 
-.medium{
+.textField.medium{
     padding-inline: $h-lg-spacing;
 }
