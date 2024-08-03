@@ -1,0 +1,33 @@
+@import '@sass/_variables.scss';
+
+.button{
+
+   border: none;
+   display: flex;
+   justify-content: center;
+   border-radius: $global-radius;
+   box-shadow: 0 0 4px 0 $gray-300;
+   align-items: center;
+
+}
+
+.icon{
+   width: 30px;
+   height: 30px;
+}
+
+.tiny{
+   padding: 0px;
+}
+
+.small{
+   padding: calc($v-spacing / 2);
+}
+
+.medium{
+   padding: $v-spacing;
+}
+
+.large{
+   padding: $v-spacing 2 * $v-spacing;
+}
