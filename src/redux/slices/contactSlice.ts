@@ -37,6 +37,9 @@ export const contactSlice = createSlice({
     goToPervPage: (state) => {
       if(state.skip > 0)
         state.skip = state.skip - 1
+    },
+    goToFirstPage: (state) => {
+      state.skip = 0;
     }
   },
   extraReducers: (builder) => {
@@ -68,6 +71,6 @@ export const contactSlice = createSlice({
   },
 })
 
-export const { addToRecentList, goToNextPage, goToPervPage } = contactSlice.actions
+export const { addToRecentList, goToNextPage, goToPervPage, goToFirstPage } = contactSlice.actions
 
 export default contactSlice.reducer
