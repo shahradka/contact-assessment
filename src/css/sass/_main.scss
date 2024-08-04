@@ -7,9 +7,9 @@ html, body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 hr {
-  border-bottom: 1px solid $border-color; 
+  border: 1px solid $border-color; 
 }
