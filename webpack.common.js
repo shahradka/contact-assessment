@@ -38,6 +38,8 @@ module.exports = {
             ["@components"]: path.resolve(__dirname, 'src/components/'),
             ["@redux"]: path.resolve(__dirname, 'src/redux/'),
             ["@sass"]: path.resolve(__dirname, 'src/css/sass'),
+            ["@api"]: path.resolve(__dirname, 'src/api'),
+            ["@hooks"]: path.resolve(__dirname, 'src/hooks'),
           },
     },
     output:{
