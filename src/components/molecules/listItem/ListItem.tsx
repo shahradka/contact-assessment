@@ -8,16 +8,16 @@ import { Link } from "react-router-dom";
 
 export interface IListItem extends Omit<HTMLProps<HTMLDivElement>, "itemID">{
     itemId?: number,
-    avatarUrl?:string
+    avatar?:string
     name?:string
     phone?: string
-    location?: string
+    address?: string
 }
 
-const ListItem = ({ name, phone, location, avatarUrl, className, itemId, ...restProps}:IListItem) => {
+const ListItem = ({ name, phone, address, avatar, className, itemId, ...restProps}:IListItem) => {
 
     return <div className={classNames(["grid grid-sm-col--4 grid-lg-col--4", "list-item", className])} {...restProps}>
-            <Avatar30 url={avatarUrl || ""} />
+            <Avatar30 url={avatar || ""} />
             <Link to={`/details/${itemId}`}>
                 <Text componentType="div">
                     {name}
@@ -27,7 +27,7 @@ const ListItem = ({ name, phone, location, avatarUrl, className, itemId, ...rest
                 {phone}
             </Text>
             <Text componentType="div" color="gray">
-                {location}
+                {address}
             </Text>
     </div>
 }

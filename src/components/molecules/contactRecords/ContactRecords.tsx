@@ -5,11 +5,13 @@ import { Text } from "@components/atoms/text";
 import { Button } from "@components/atoms/button";
 import { ChevronDown15, ChevronUp15 } from "@components/atoms/icons/Chevron";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 interface IContactRecords {
     items?:Array<{
-        avatarUrl?:string
-        name?:string
+        avatar?:string
+        first_name?:string
+        last_name?:string
         id:number
     }>
 }
@@ -26,10 +28,14 @@ const ContactRecords = ({items}:IContactRecords) => {
                 <div className={classNames(["contact-record-inner-mask", {["close"]:!isOpen}])}>
                     <div className="contact-record-inner">
                         <div className="grid grid-sm-col--4 grid-lg-col--4">
-                            {items?.map((item) => <Button key={`ContactRecords_${item.id}`} size="large" className="contact-record-item">
-                                        <Avatar30 url={item.avatarUrl || ""} />
-                                        <Text className="contact-record-item-text" color="gray" variant="small">{item.name}</Text>
+                            {items?.map((item) => <Link to={`/details/${item.id}`}key={`ContactRecords_${item.id}`}>
+                                    <Button size="large" className="contact-record-item">
+                                        <Avatar30 url={item.avatar || ""} />
+                                        <Text className="contact-record-item-text" color="gray" variant="small">
+                                            {`${item.first_name} ${item.last_name}`}
+                                        </Text>
                                     </Button>
+                                </Link>
                             )}
                         </div>
                     </div>
