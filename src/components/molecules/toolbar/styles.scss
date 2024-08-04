@@ -1,6 +1,9 @@
+@import '@sass/_variables.scss'; 
+
 .toolbar{
     width: 100%;
     display: flex;
+    padding-block: $v-spacing;
 }
 
 .toolbar .space{
