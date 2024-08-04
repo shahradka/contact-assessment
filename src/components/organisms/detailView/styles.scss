@@ -1,0 +1,25 @@
+@import '@sass/_variables.scss'; 
+
+.detail-view{
+    border-radius: $global-radius;
+    padding: $v-spacing;
+}
+
+.detail-view-inner{
+    align-items: center;
+}
+
+.detail-view-person-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-view-person-info-text{
+    padding-block: $v-spacing;
+    display: flex;
+    align-items: center;
+}
+
+.detail-view-person-info-icon{
+    padding-inline-end: $h-spacing;
+}
