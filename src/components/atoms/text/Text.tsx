@@ -22,20 +22,9 @@ interface IText extends HtmlHTMLAttributes<HTMLSpanElement> {
 
 const CustomComponent: FC<
   Omit<IText, "children"> & { children?: ReactNode }
-> = ({ variant, children, className, componentType = 'span', ...restProps }) => {
-  return variant === "heading1" ||
-    variant === "heading2" ||
-    variant === "heading3" ||
-    variant === "heading4"
-    ? createElement(
-        (variant === "heading1" && "h1") ||
-          ("heading2" && "h2") ||
-          ("heading2" && "h3") ||
-          ("heading3" && "h4"),
-        { className, ...restProps },
-        children,
-      )
-    : createElement(componentType, { className, ...restProps }, children);
+> = ({ children, className, componentType = 'span', ...restProps }) => {
+
+  return createElement(componentType, { className, ...restProps }, children);
 };
 
 const Text: FC<IText> = ({
@@ -48,8 +37,6 @@ const Text: FC<IText> = ({
   ...restProps
 }) => {
   const { mobile, tablet } = useMediaQueries();
-  console.log("tablet", tablet);
-  console.log("variant", variant)
   const renderTitle = (
     <CustomComponent
       variant={variant}
