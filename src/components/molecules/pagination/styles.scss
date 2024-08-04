@@ -1,0 +1,16 @@
+@import '@sass/_variables.scss';
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $v-spacing;
+}
+
+.pagination-button{
+    margin-inline: $h-spacing;
+}
+
+.pagination-textField{
+    text-align: center;
+}
