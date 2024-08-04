@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
       element: <Layout title="home" contactRecordsComp={<ContactRecords />}><Home /></Layout>,
     },
     {
-      path: "/details/:id",
+      path: "/details/:contactId",
       element: <Layout title="Details"><Details /></Layout>,
     }
   ]);
