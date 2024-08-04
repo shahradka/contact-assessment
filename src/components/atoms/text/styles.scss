@@ -3,11 +3,6 @@
 @import '@sass/_breakpoints';
 $headlines: 4;
 
-.text.normal {
-  font-family: $default-font-style-name;
-  font-weight: $font-medium;
-}
-
 .text.bold {
   font-weight: $font-bold;
 }
@@ -16,6 +11,7 @@ $headlines: 4;
   letter-spacing: -0.2px;
   padding:0px;
   margin:0px;
+  font-family: $default-font-style-name;
 }
 
 .text.contrast {
